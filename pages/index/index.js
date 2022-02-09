@@ -1,48 +1,75 @@
-// index.js
-// 获取应用实例
+//index.js
+//获取应用实例
 const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    skin: app.globalData.skin,
+    navbar: {
+      loading: false,
+      color: '#FFFFFF',
+      background: '#0A0A0C',
+      show: true,
+      animated: false,
+    },
   },
-  // 事件处理函数
-  bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad() {
-    if (wx.getUserProfile) {
-      this.setData({
-        canIUseGetUserProfile: true
-      })
-    }
-  },
-  getUserProfile(e) {
-    // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
-    wx.getUserProfile({
-      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
-        console.log(res)
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    })
-  },
-  getUserInfo(e) {
-    // 不推荐使用getUserInfo获取用户信息，预计自2021年4月13日起，getUserInfo将不再弹出弹窗，并直接返回匿名的用户个人信息
-    console.log(e)
+
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+      skin: app.globalData.skin
     })
-  }
+
+    var query = wx.createSelectorQuery();
+    query.select('#navbar').boundingClientRect()
+    query.exec((res) => {
+      var navHeight = res[0].height; // 获取navHeight高度
+      app.globalData.navHeight = navHeight;
+      console.info("onLoad->nav高度：" + navHeight+" "+app.globalData.navHeight);
+    })
+  },
+
+  /**
+   * 显示时触发
+   */
+  onShow: function () {
+    var skin = app.globalData.skin;
+    this.setData({
+      skin: skin
+    })
+    wx.getSystemInfo({
+      success: (res) => {
+        console.info("onShow->当前的设备信息：", res);
+        // 设备品牌
+        var brand = res.brand;
+        var screenHeight = res.screenHeight;
+        var display = 'normal';
+        if (brand.toLowerCase().indexOf('huawei') >= 0 ||
+          brand.toLowerCase().indexOf('vivo') >= 0 ||
+          brand.toLowerCase().indexOf('oppo') >= 0) {
+          display = screenHeight > 700 ? 'high' : 'normal';
+        } else {
+          display = screenHeight > 800 ? 'high' : 'normal';
+        }
+        app.globalData.display = display
+        console.info("onShow->屏幕高度：" + screenHeight, app.globalData.display);
+      },
+    })
+  },
+
+
+
+
+
+
+  enter: function () {
+    wx.navigateTo({
+      url: '../search/search',
+    })
+  },
+
+
 })
