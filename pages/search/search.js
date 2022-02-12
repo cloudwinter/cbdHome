@@ -513,40 +513,10 @@ Page({
      */
     isValidBlueName(name) {
       if (name) {
-        if (name.indexOf('QMS-IQ') >= 0 ||
-          name.indexOf('QMS-I06') >= 0 || name.indexOf('QMS-I16') >= 0 || name.indexOf('QMS-I26') >= 0 || name.indexOf('QMS-I36') >= 0 ||
-          name.indexOf('QMS-I46') >= 0 ||
-          name.indexOf('QMS-I56') >= 0 || name.indexOf('QMS-I66') >= 0 || name.indexOf('QMS-I76') >= 0 || name.indexOf('QMS-I86') >= 0 ||
-          name.indexOf('QMS-I96') >= 0 ||
-          name.indexOf('QMS-L04') >= 0 || name.indexOf('QMS-L14') >= 0 || name.indexOf('QMS-L24') >= 0 || name.indexOf('QMS-L34') >= 0 ||
-          name.indexOf('QMS-L44') >= 0 || name.indexOf('QMS-L54') >= 0 || name.indexOf('QMS-L64') >= 0 || name.indexOf('QMS-L74') >= 0 ||
-          name.indexOf('QMS-L84') >= 0 || name.indexOf('QMS-L94') >= 0 ||
-          name.indexOf('QMS-LQ') >= 0 ||
-          name.indexOf('QMS-JQ-D') >= 0 ||
-          name.indexOf('QMS-NQ') >= 0 ||
-          name.indexOf('QMS-MQ') >= 0 ||
-          name.indexOf('QMS-U700') >= 0 ||
-          name.indexOf('QMS4') >= 0 ||
-          name.indexOf('S4-N') >= 0 ||
-          name.indexOf('QMS3') >= 0 ||
-          name.indexOf('QMS2') >= 0 ||
-          name.indexOf('QMS-KQ2') >= 0 ||
-          name.indexOf('QMS-K12') >= 0 ||
-          name.indexOf('QMS-KQ') >= 0 ||
-          name.indexOf('QMS-K01') >= 0 ||
-          name.indexOf('QMS-KQ-H') >= 0 ||
-          name.indexOf('QMS-H02') >= 0 ||
-          name.indexOf('QMS-DFQ') >= 0 ||
-          name.indexOf('QMS-430') >= 0 ||
-          name.indexOf('QMS-444') >= 0 ||
-          name.indexOf('QMS-DQ') >= 0 ||
-          name.indexOf('QMS-443') >= 0 ||
-          name.indexOf('S3-2') >= 0 ||
-          name.indexOf('S3-3') >= 0 ||
-          name.indexOf('S3-4') >= 0 ||
-          name.indexOf('S4-Y') >= 0 ||
-          name.indexOf('S5-Y') >= 0 ||
-          name.indexOf('S6-Y') >= 0) {
+        if (name.indexOf('L140') >= 0 ||
+          name.indexOf('N940') >= 0 ||
+          name.indexOf('U920') >= 0 ||
+          name.indexOf('1220') >= 0) {
           return true;
         }
       }
@@ -560,51 +530,12 @@ Page({
      */
     getKuaijieType(name) {
       if (name) {
-        if (name.indexOf('QMS-IQ') >= 0 ||
-          name.indexOf('QMS-I06') >= 0 || name.indexOf('QMS-I16') >= 0 || name.indexOf('QMS-I26') >= 0 || name.indexOf('QMS-I36') >= 0 ||
-          name.indexOf('QMS-I46') >= 0 ||
-          name.indexOf('QMS-I56') >= 0 || name.indexOf('QMS-I66') >= 0 || name.indexOf('QMS-I76') >= 0 || name.indexOf('QMS-I86') >= 0 ||
-          name.indexOf('QMS-I96') >= 0 ||
-          name.indexOf('QMS-L04') >= 0 || name.indexOf('QMS-L14') >= 0 || name.indexOf('QMS-L24') >= 0 || name.indexOf('QMS-L34') >= 0 ||
-          name.indexOf('QMS-L44') >= 0 || name.indexOf('QMS-L54') >= 0 || name.indexOf('QMS-L64') >= 0 || name.indexOf('QMS-L74') >= 0 ||
-          name.indexOf('QMS-L84') >= 0 || name.indexOf('QMS-L94') >= 0 ||
-          name.indexOf('QMS-LQ') >= 0) {
+        if (name.indexOf('L140') >= 0) {
           return 'K1';
-        } else if (name.indexOf('QMS-JQ-D') >= 0 ||
-          name.indexOf('QMS-NQ') >= 0 ||
-          name.indexOf('QMS-MQ') >= 0 ||
-          name.indexOf('QMS-U700') >= 0 ||
-          name.indexOf('QMS4') >= 0 ||
-          name.indexOf('S4-N') >= 0 ||
-          name.indexOf('QMS3') >= 0 ||
-          name.indexOf('QMS2') >= 0) {
+        } else if (name.indexOf('N940') >= 0 ||
+          name.indexOf('U920') >= 0 ||
+          name.indexOf('1220') >= 0) {
           return 'K2';
-        } else if (name.indexOf('QMS-KQ2') >= 0 ||
-          name.indexOf('QMS-K12') >= 0) {
-          return 'K6';
-        } else if (name.indexOf('QMS-KQ-H') >= 0 ||
-          name.indexOf('QMS-H02') >= 0) {
-          return 'K10';
-        } else if (name.indexOf('QMS-KQ') >= 0 ||
-          name.indexOf('QMS-K01') >= 0) {
-          return 'K3';
-        } else if (name.indexOf('QMS-DFQ') >= 0 ||
-          name.indexOf('QMS-430') >= 0 ||
-          name.indexOf('QMS-444') >= 0) {
-          return 'K4';
-        } else if (name.indexOf('QMS-DQ') >= 0 ||
-          name.indexOf('QMS-443') >= 0) {
-          return 'K5';
-        } else if (name.indexOf('S3-2') >= 0) {
-          return 'K7';
-        } else if (name.indexOf('S3-3') >= 0) {
-          return 'K8';
-        } else if (name.indexOf('S3-4') >= 0) {
-          return 'K9';
-        } else if (name.indexOf('S4-Y') >= 0 ||
-          name.indexOf('S5-Y') >= 0 ||
-          name.indexOf('S6-Y') >= 0) {
-          return 'K11';
         }
       }
       // 默认K1
@@ -618,53 +549,12 @@ Page({
      */
     getWeitiaoType(name) {
       if (name) {
-        if (name.indexOf('QMS-IQ') >= 0 ||
-          name.indexOf('QMS-I06') >= 0 || name.indexOf('QMS-I16') >= 0 || name.indexOf('QMS-I26') >= 0 || name.indexOf('QMS-I36') >= 0 ||
-          name.indexOf('QMS-I46') >= 0 ||
-          name.indexOf('QMS-I56') >= 0 || name.indexOf('QMS-I66') >= 0 || name.indexOf('QMS-I76') >= 0 || name.indexOf('QMS-I86') >= 0 ||
-          name.indexOf('QMS-I96') >= 0 ||
-          name.indexOf('QMS-L04') >= 0 || name.indexOf('QMS-L14') >= 0 || name.indexOf('QMS-L24') >= 0 || name.indexOf('QMS-L34') >= 0 ||
-          name.indexOf('QMS-L44') >= 0 || name.indexOf('QMS-L54') >= 0 || name.indexOf('QMS-L64') >= 0 || name.indexOf('QMS-L74') >= 0 ||
-          name.indexOf('QMS-L84') >= 0 || name.indexOf('QMS-L94') >= 0 || name.indexOf('QMS-LQ') >= 0) {
+        if (name.indexOf('L140') >= 0) {
           return 'W1';
-        } else if (name.indexOf('QMS-JQ-D') >= 0 ||
-          name.indexOf('QMS4') >= 0 ||
-          name.indexOf('S4-N') >= 0) {
+        } else if (name.indexOf('N940') >= 0) {
           return 'W2'
-        } else if (name.indexOf('QMS-NQ') >= 0 || name.indexOf('QMS3') >= 0) {
-          return 'W3'
-        } else if (name.indexOf('QMS-MQ') >= 0 || name.indexOf('QMS2') >= 0) {
+        } else if (name.indexOf('U920') >= 0 || name.indexOf('1220') >= 0) {
           return 'W4'
-        } else if (name.indexOf('QMS-U700') >= 0) {
-          return 'W9';
-        } else if (
-          name.indexOf('QMS-KQ-H') >= 0 ||
-          name.indexOf('H02') >= 0) {
-          return 'W6';
-        } else if (name.indexOf('QMS-KQ2') >= 0 ||
-          name.indexOf('QMS-K12') >= 0) {
-          return 'W4';
-        } else if (name.indexOf('QMS-KQ') >= 0 ||
-          name.indexOf('QMS-K01') >= 0) {
-          return 'W5'
-        } else if (name.indexOf('QMS-DFQ') >= 0 ||
-          name.indexOf('QMS-430') >= 0 ||
-          name.indexOf('QMS-444') >= 0) {
-          return 'W7';
-        } else if (name.indexOf('QMS-DQ') >= 0 ||
-          name.indexOf('QMS-443') >= 0) {
-          return 'W8';
-        } else if (name.indexOf('S3-2') >= 0) {
-          return 'W10';
-        } else if (name.indexOf('S3-3') >= 0 ||
-          name.indexOf('S3-4') >= 0) {
-          return 'W11';
-        } else if (name.indexOf('S4-Y') >= 0) {
-          return 'W12';
-        } else if (name.indexOf('S5-Y') >= 0) {
-          return 'W13';
-        } else if (name.indexOf('S6-Y') >= 0) {
-          return 'W14';
         }
       }
       // 默认K1
