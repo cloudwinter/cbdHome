@@ -2,12 +2,13 @@
 
 /***  common **/
 .dark .button-bg {
-  background: #1E1F24;
+  background: #274D9F;
 }
 
 .dark .button {
-  color: #59B84D;
-  border-color: #59B84D;
+  color: white;
+  background: #2D4178;
+  border: 1px solid #043681;
 }
 
 
@@ -101,7 +102,7 @@
 
 .green {
   padding-right: 20rpx;
-  color: #D9E548;
+  color: #ffffff;
 }
 
 .item-right .white {
