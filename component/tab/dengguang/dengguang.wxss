@@ -1,6 +1,17 @@
 /* component/dengguang/dengguang.wxss */
 @import './../../../common/tab.wxss';
 
+.dh-content .dh-icon {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 80rpx;
+}
+
+.dh-content .dh-name {
+  margin-top: 40rpx;
+  color: #ffffff;
+}
+
 /*** common  */
 .orange .button-bg {
   background: #6E269A;
@@ -14,13 +25,13 @@
 
 
 .dark .button-bg {
-  background: #1E1F24;
+  background: #2345A4;
   /* border-color: #5A9927; */
 }
 
 .dark .button-bg-selected {
-  background-color: #1E1F24;
-  border:3rpx solid #5A9927;
+  background-color: #2345A4;
+  border:4rpx solid #274DFF;
 }
 
 
@@ -137,7 +148,7 @@
 .line10 {
   width: 9.4%;
   height: 4rpx;
-  background: #05BF74;
+  background: #0093FF;
   border-radius: 4rpx;
   margin-right: 2rpx;
 }
