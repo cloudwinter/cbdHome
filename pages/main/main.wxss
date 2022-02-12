@@ -5,8 +5,8 @@
   left:0;
   width:100%;
   height: 52px;
-  background: #06194B;
-  border-top:1px solid #253974;
+  background: #061947;
+  /* border-top:1px solid #253974; */
   z-index:500;
   display: flex;
 }

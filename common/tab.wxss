@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("http://www.tri-mix.net/xiaochengxuPIC/zerosleep5.png");
+  background-image: url("https://636c-cloudprd-9gl8dq5f5191037e-1309601866.tcb.qcloud.la/cbd/header_donghua_yuan%402x.png?sign=dd50b1c7983f0566fad87d535c82d7e5&t=1644672243");
   background-position: 50% 50%;
   background-size: cover;  
 }
@@ -44,7 +44,7 @@
 }
 
 .dh-content .dh-name{
-  color: #41B67D;
+  color: #ffffff;
 }
 
 

@@ -3,12 +3,23 @@
 
 /************common****************** */
 .dark .button-bg {
-  background: #1E1F24;
+  background: #2345A4;
 }
 
 .dark .button-bg-selected {
-  background-color: #1E1F24;
-  border:3rpx solid #5A9927;
+  background: #2345A4;
+  border:4rpx solid #274DFF;
+}
+
+.dark .circle-button-bg {
+  border-radius: 204rpx;
+  background: #2345A4;
+}
+
+.dark .circle-button-bg-selected {
+  border-radius: 204rpx;
+  background: #2345A4;
+  border:4rpx solid #274DFF;
 }
 
 
