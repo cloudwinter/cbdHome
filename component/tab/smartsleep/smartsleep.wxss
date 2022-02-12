@@ -4,7 +4,7 @@
   width: 68% !important;
   height: 120rpx;
   border-radius: 120rpx;
-  background: #1E1F24;
+  background: #2345A4;
 }
 
 .orange .shezhi-button-bg {
@@ -43,7 +43,7 @@
 }
 
 .dark .color-59B84D {
-  color: #59B84D;
+  color: #ffffff;
   font-size: 28rpx;
 }
 
@@ -54,7 +54,7 @@
 
 .dark .shezhi-button-left {
   flex: 1;
-  color: #59B84D;
+  color: #ffffff;
   font-size: 28rpx;
   margin-left: 62rpx;
 }
@@ -73,7 +73,7 @@
 }
 
 .dark .shezhi-button-name {
-  color: #59B84D;
+  color: #ffffff;
   font-size: 28rpx;
 }
 
@@ -83,8 +83,8 @@
 }
 
 .shezhi-button-icon {
-  width: 16rpx;
-  height: 28rpx;
+  width: 50rpx;
+  height: 50rpx;
   margin-left: 20rpx;
 }
 

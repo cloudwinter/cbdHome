@@ -4,14 +4,14 @@
 		<view class="shezhi-content shezhi-button-bg" bindtap="dataEntry">
 			<view class="shezhi-button-left">睡姿特征数据录入</view>
 			<view class="shezhi-button-right">
-				<image class="shezhi-button-icon" src="../../../images/{{skin}}/row_blue@2x.png"></image>
+				<image class="shezhi-button-icon" src="../../../images/{{skin}}/row@3x.png"></image>
 			</view>
 		</view>
 
 		<view class="shezhi-content shezhi-button-bg" bindtap="sleepAdjust">
 			<view class="shezhi-button-left">睡姿角度调整</view>
 			<view class="shezhi-button-right">
-				<image class="shezhi-button-icon" src="../../../images/{{skin}}/row_blue@2x.png"></image>
+				<image class="shezhi-button-icon" src="../../../images/{{skin}}/row@3x.png"></image>
 			</view>
 		</view>
 
@@ -19,7 +19,7 @@
 			<view class="shezhi-button-left">智能睡眠定时</view>
 			<view class="shezhi-button-right">
 				<view class="shezhi-button-name">{{sleepTimerDesc}}</view>
-				<image class="shezhi-button-icon" src="../../../images/{{skin}}/row_blue@2x.png"></image>
+				<image class="shezhi-button-icon" src="../../../images/{{skin}}/row@3x.png"></image>
 			</view>
 		</view>
 
@@ -27,7 +27,7 @@
 		<view class="shezhi-content shezhi-button-bg" bindtap="sleepReport">
 			<view class="shezhi-button-left">睡眠报告</view>
 			<view class="shezhi-button-right">
-				<image class="shezhi-button-icon" src="../../../images/{{skin}}/row_blue@2x.png"></image>
+				<image class="shezhi-button-icon" src="../../../images/{{skin}}/row@3x.png"></image>
 			</view>
 		</view>
 
