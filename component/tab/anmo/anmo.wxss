@@ -3,24 +3,32 @@
 
 
 /********* common ************** */
+.dh-content .dh-icon {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 80rpx;
+}
+
+.dh-content .dh-name {
+  margin-top: 40rpx;
+  color: #ffffff;
+}
+
 .text-normal {
   color: white;
 }
-
-
-
 /*** common dark  */
 .dark .text-selected {
-  color: #05BF74;
+  color: white;
 }
 
 .dark .button-bg {
-  background: #1E1F24;
+  background: #2345A4;
 }
 
 .dark .button-bg-selected {
-  background-color: #1E1F24;
-  border:3rpx solid #5A9927;
+  background: #2345A4;
+  border:4rpx solid #274DFF;
 }
 
 /*** common orange  */
