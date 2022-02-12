@@ -22,31 +22,11 @@
 		<view class="tab-container" hidden="{{nowPage!='kuaijie'}}">
 			<kuaijie-K1 wx:if="{{kuaijieType=='K1'}}"></kuaijie-K1>
 			<kuaijie-K2 wx:if="{{kuaijieType=='K2'}}"></kuaijie-K2>
-			<kuaijie-K3 wx:if="{{kuaijieType=='K3'}}"></kuaijie-K3>
-			<kuaijie-K4 wx:if="{{kuaijieType=='K4'}}"></kuaijie-K4>
-			<kuaijie-K5 wx:if="{{kuaijieType=='K5'}}"></kuaijie-K5>
-			<kuaijie-K6 wx:if="{{kuaijieType=='K6'}}"></kuaijie-K6>
-			<kuaijie-K7 wx:if="{{kuaijieType=='K7'}}"></kuaijie-K7>
-			<kuaijie-K8 wx:if="{{kuaijieType=='K8'}}"></kuaijie-K8>
-			<kuaijie-K9 wx:if="{{kuaijieType=='K9'}}"></kuaijie-K9>
-			<kuaijie-K10 wx:if="{{kuaijieType=='K10'}}"></kuaijie-K10>
-			<kuaijie-K11 wx:if="{{kuaijieType=='K11'}}"></kuaijie-K11>
 		</view>
 		<view class="tab-container" hidden="{{nowPage!='weitiao'}}">
 			<weitiao-W1 wx:if="{{weitiaoType=='W1'}}"></weitiao-W1>
 			<weitiao-W2 wx:if="{{weitiaoType=='W2'}}"></weitiao-W2>
-			<weitiao-W3 wx:if="{{weitiaoType=='W3'}}"></weitiao-W3>
 			<weitiao-W4 wx:if="{{weitiaoType=='W4'}}"></weitiao-W4>
-			<weitiao-W5 wx:if="{{weitiaoType=='W5'}}"></weitiao-W5>
-			<weitiao-W6 wx:if="{{weitiaoType=='W6'}}"></weitiao-W6>
-			<weitiao-W7 wx:if="{{weitiaoType=='W7'}}"></weitiao-W7>
-			<weitiao-W8 wx:if="{{weitiaoType=='W8'}}"></weitiao-W8>
-			<weitiao-W9 wx:if="{{weitiaoType=='W9'}}"></weitiao-W9>
-			<weitiao-W10 wx:if="{{weitiaoType=='W10'}}"></weitiao-W10>
-			<weitiao-W11 wx:if="{{weitiaoType=='W11'}}"></weitiao-W11>
-			<weitiao-W12 wx:if="{{weitiaoType=='W12'}}"></weitiao-W12>
-			<weitiao-W13 wx:if="{{weitiaoType=='W13'}}"></weitiao-W13>
-			<weitiao-W14 wx:if="{{weitiaoType=='W14'}}"></weitiao-W14>
 		</view>
 		<view class="tab-container" hidden="{{nowPage!='anmo'}}">
 			<anmo></anmo>
