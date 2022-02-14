@@ -19,7 +19,7 @@
   font-size: 34rpx;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
-  color: #59B84D;
+  color: #FFFFFF;
   line-height: 40rpx;
 }
 
@@ -47,7 +47,7 @@
 .dark .tips {
   width: 90%;
   height: auto;
-  background: #1E1F24;
+  background: #2345A4;
   border-radius: 16rpx;
   opacity: 0.88;
   margin-top: 30rpx;
@@ -70,7 +70,7 @@
   font-size: 28rpx;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
-  color: #59B84D;
+  color: #FFFFFF;
   line-height: 40rpx;
 }
 
@@ -133,12 +133,12 @@
 .dark .oval-button {
   width: 140rpx;
   height: 140rpx;
-  background: #1E1F24 ;
+  background: #2345A4 ;
   border-radius: 70rpx;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #59B84D;
+  color: #ffffff;
 }
 
 
@@ -155,12 +155,12 @@
 
 .dark .anjian .selected {
   border-radius: 140px;
-  border: 1px solid #59B84D;
+  border: 1px solid #274DFF;
 }
 
 .orange .anjian .selected {
   border-radius: 140px;
-  border: 1px solid #FF9704;
+  border: 1px solid #1f1a13;
 }
 
 .dark .hint {
