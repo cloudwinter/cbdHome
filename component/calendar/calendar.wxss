@@ -22,7 +22,7 @@ cover-view{
 
 .calendar-wrapper {
   width: 100%;
-  border: 1px #59B84D solid;
+  border: 1px #274DFF solid;
   box-sizing: border-box;
   font-size: 26rpx;
   /* background: #fff; */
@@ -63,7 +63,7 @@ cover-view{
   justify-content: center;
   align-items: center;
   position: relative;
-  color: #1AB16C;
+  color: #274DFF;
   width: 53rpx;
   height: 53rpx;
 }
@@ -80,21 +80,21 @@ cover-view{
 
 .left-color{
   border-right: 40rpx solid transparent;
-  border-right-color: #1AB16C;
+  border-right-color: #274DFF;
 }
 
 .right-color{
   border-left: 40rpx solid transparent;
-  border-left-color: #1AB16C;
+  border-left-color: #274DFF;
 }
 
 .btn {
   margin: 0 30rpx;
   width: 240rpx;
   height: 53rpx;
-  border: 1rpx solid #1AB16C;
+  border: 1rpx solid #274DFF;
   border-radius: 26rpx;
-  color: #1AB16C;
+  color: #274DFF;
   font-size: 26rpx;
   box-sizing: border-box;
 }
@@ -116,12 +116,12 @@ cover-view{
   padding-left: 20rpx;
   height: 50rpx;
   line-height: 50rpx;
-  border: 1px #1AB16C solid;
+  border: 1px #274DFF solid;
   border-right: none;
   font-size: 28rpx;
   border-top-left-radius: 50rpx;
   border-bottom-left-radius: 50rpx;
-  color: #1AB16C;
+  color: #274DFF;
   background: rgba(82, 184, 245, 0.1);
 }
 .checkalllbtn {
@@ -132,12 +132,12 @@ cover-view{
   padding-right: 20rpx;
   height: 50rpx;
   line-height: 50rpx;
-  border: 1px #1AB16C solid;
+  border: 1px #274DFF solid;
   border-left: none;
   font-size: 28rpx;
   border-top-right-radius: 50rpx;
   border-bottom-right-radius: 50rpx;
-  color: #1AB16C;
+  color: #274DFF;
   background: rgba(82, 184, 245, 0.1);
 }
 
@@ -171,7 +171,7 @@ cover-view{
   width: 100%;
   text-align: center;
   line-height: 80rpx;
-  color: #1AB16C;
+  color: #274DFF;
 }
 .calendar-header.mini view,
 .calendar-header.mini cover-view
@@ -209,7 +209,7 @@ cover-view{
 }
 
 .date-current {
-  background: #1AB16C;
+  background: #274DFF;
   color: #fff;
 }
 
@@ -237,7 +237,7 @@ cover-view{
   height: 100rpx;
   line-height: 100rpx;
   text-align: center;
-  color: #1AB16C;
+  color: #274DFF;
   align-items: center;
 }
 .packup-button{
