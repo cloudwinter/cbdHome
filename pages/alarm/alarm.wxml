@@ -90,7 +90,7 @@
 
 			<!-- 保存 -->
 			<view class="item item-right-name" style="margin-top:10px;justify-content: center;" bindtap="saveTap">
-				<image class="button-icon" src="../../images/{{skin}}/alarm@2x.png"></image>
+				<!-- <image class="button-icon" src="../../images/{{skin}}/alarm@2x.png"></image> -->
 				<view class="button-name">保存</view>
 			</view>
 
