@@ -3,7 +3,7 @@
   width: 90% !important;
   height: 120rpx;
   border-radius: 120rpx;
-  background: #1E1F24;
+  background: #2345A4;
 }
 
 .orange .shezhi-button-bg {
@@ -46,7 +46,7 @@
 }
 
 .shezhi-button-name {
-  color: #59B84D;
+  color: #ffffff;
   font-size: 28rpx;
 }
 
@@ -76,6 +76,22 @@
   display: block;
   padding: 5px;
   width: 100%;
+}
+
+radio .wx-radio-input {
+  border-color: #87858a;
+}
+radio .wx-radio-input.wx-radio-input-checked {
+  /* border: 2px solid #0073FF; */
+  border-color: #2345A4 !important;
+  background: white !important;
+}
+radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: #2345A4;
 }
 
 .model-row {
