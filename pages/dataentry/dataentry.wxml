@@ -16,7 +16,7 @@
       </view>
 
       <view class="tips">
-        <view class="tips-text" style="margin-top:10rpx;">说明：</view>
+        <view class="tips-text" style="margin-top:15rpx;">说明：</view>
         <view class="tips-text" style="margin-top:10rpx;">1.请先将电动床放平，再进行数据录入操作。</view>
         <view class="tips-text" style="margin-top:10rpx;">2.请平躺，完全放松身体后，按平躺键。</view>
         <view class="tips-text" style="margin-top:10rpx;">3.请侧躺，完全放松身体后，按侧躺键。</view>
