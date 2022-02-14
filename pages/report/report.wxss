@@ -19,7 +19,7 @@
   margin-top: 30rpx;
   margin-left: 30rpx;
   margin-right: 30rpx;
-  background: #1E1F24;
+  background: #0C1C4D;
   border-radius: 32rpx;
 }
 
@@ -123,7 +123,7 @@
   width: 100%;
   height: auto;
   margin-top: 36rpx;
-  background: #1E1F24;
+  background: #0C1C4D;
   padding-bottom: 30rpx;
   padding-top: 34rpx;
   flex: 1;
@@ -206,7 +206,7 @@
 
 
 .graph-button {
-  background: #5EA2D7;
+  background: #2345A4;
   border-radius: 21rpx;
   height: 55rpx;
   display: flex;
@@ -214,6 +214,7 @@
   font-size: 24rpx;
   font-family: PingFangSC-Regular, PingFang SC;
   justify-content: center;
+  color: #FFFFFF;
 }
 
 

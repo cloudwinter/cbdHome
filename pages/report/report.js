@@ -390,7 +390,7 @@ Page({
       type: 'line',
       categories: simulationData.categories,
       animation: true,
-      background: '#1E1F24',
+      background: '#0C1C4D',
       series: [{
         name: '翻身（次数）',
         data: simulationData.data,
