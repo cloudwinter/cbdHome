@@ -19,7 +19,7 @@
   margin-left: 30rpx;
   margin-right: 30rpx;
   margin-top: 30rpx;
-  background: #1E1F24;
+  background: #2345A4;
 border-radius: 32px;
 }
 
@@ -36,7 +36,7 @@ border-radius: 32px;
   flex-direction: row;
   width: 100%;
   height: 74rpx;
-  background: #2B2D36;
+  background: #4A5FFF;
   border-radius: 32rpx 32rpx 0rpx 0rpx;
   justify-content: center;
   align-items: center;
@@ -102,7 +102,7 @@ border-radius: 32px;
   font-size: 28rpx;
   font-family: PingFangSC-Semibold, PingFang SC;
   font-weight: 600;
-  color: #6D707B;
+  color: #FFFFFF;
   margin-left: 12rpx;
   display: flex;
   justify-content: center;
@@ -136,7 +136,7 @@ border-radius: 32px;
   font-size: 24rpx;
   font-family: PingFangSC-Medium, PingFang SC;
   font-weight: 500;
-  color: #6D707B;
+  color: #FFFFEE;
   margin-left: 12rpx;
   display: flex;
   align-items: center;
