@@ -1,11 +1,20 @@
 <!--index.wxml-->
 <view class="page-{{skin}}">
-	<navbar id="navbar" loading="{{navbar.loading}}" show="{{navbar.show}}" color="{{navbar.color}}" background="{{navbar.background}}" back="{{false}}"></navbar>
+	<navbar id="navbar" loading="{{navbar.loading}}" show="{{navbar.show}}" color="{{navbar.color}}"
+		background="{{navbar.background}}" back="{{false}}"></navbar>
 
 	<view class="{{skin}}">
 
 		<view class="container">
-			<image class="logo" src="../../images/logo@2x.png"></image>
+			<!-- <image class="logo" src="../../images/logo@2x.png"></image> -->
+			<video id="myVideo" class="myVideo" src="https://636c-cloudprd-9gl8dq5f5191037e-1309601866.tcb.qcloud.la/cbd/CBD_Aop.mp4?sign=d1e3f6f16268d70b7c318f9e91a647b0&t=1644851209" autoplay='{{false}}' controls='{{false}}' bindended='endAction'>
+				<cover-view bindtap='startFirstPlayAction' class='cover-view' wx:if="{{isShowCoverView}}">
+					<cover-image class='cover-view' src="../../images/logo@2x.png" mode="aspectFill"/>
+					<cover-image
+						style='position:absolute; top:50%; left:50%; width:132rpx; height:132rpx; margin:-66rpx 0 0 -66rpx; z-index:10000'
+						src="../../images/cbd_play@2x.png"/>
+				</cover-view>
+			</video>
 			<view class="bottom">
 				<button class="button" bindtap="enter" plain="true">进入</button>
 			</view>

@@ -1,10 +1,11 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+let videoCtx = null
 Page({
   data: {
     skin: app.globalData.skin,
+    isShowCoverView:true,
     navbar: {
       loading: false,
       color: '#FFFFFF',
@@ -37,6 +38,7 @@ Page({
    */
   onShow: function () {
     var skin = app.globalData.skin;
+    videoCtx = wx.createVideoContext('myVideo', this)
     this.setData({
       skin: skin
     })
@@ -62,7 +64,18 @@ Page({
 
 
 
+  startFirstPlayAction:function() {
+    videoCtx.play();
+    this.setData({
+      isShowCoverView:false
+    })
+  },
 
+  endAction:function(){
+    this.setData({
+      isShowCoverView:true
+    })
+  },
 
 
   enter: function () {
