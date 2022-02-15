@@ -516,7 +516,8 @@ Page({
         if (name.indexOf('L140') >= 0 ||
           name.indexOf('N940') >= 0 ||
           name.indexOf('U920') >= 0 ||
-          name.indexOf('1220') >= 0) {
+          name.indexOf('1220') >= 0 ||
+          name.indexOf('QMS3') >= 0) {
           return true;
         }
       }
@@ -534,7 +535,8 @@ Page({
           return 'K1';
         } else if (name.indexOf('N940') >= 0 ||
           name.indexOf('U920') >= 0 ||
-          name.indexOf('1220') >= 0) {
+          name.indexOf('1220') >= 0 ||
+          name.indexOf('QMS3') >= 0) {
           return 'K2';
         }
       }
@@ -553,7 +555,7 @@ Page({
           return 'W1';
         } else if (name.indexOf('N940') >= 0) {
           return 'W2'
-        } else if (name.indexOf('U920') >= 0 || name.indexOf('1220') >= 0) {
+        } else if (name.indexOf('U920') >= 0 || name.indexOf('1220') >= 0 || name.indexOf('QMS3') >= 0) {
           return 'W4'
         }
       }

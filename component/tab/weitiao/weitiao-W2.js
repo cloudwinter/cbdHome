@@ -6,10 +6,10 @@ const util = require('../../../utils/util')
 const WxNotificationCenter = require('../../../utils/WxNotificationCenter')
 const sendPrefix = 'FFFFFFFF050000'; // 发送码前缀
 const sendXHPrefix = 'FFFFFFFF050005'; // 循环发送码前缀
-const imgSanjiaoBottomSelected = '../../../images/' + app.globalData.skin + '/sanjiao-bottom-selected@3x.png';
-const imgSanjiaoBottomNormal = '../../../images/' + app.globalData.skin + '/sanjiao-bottom-normal@3x.png';
-const imgSanjiaoTopSelected = '../../../images/' + app.globalData.skin + '/sanjiao-top-selected@3x.png';
-const imgSanjiaoTopNormal = '../../../images/' + app.globalData.skin + '/sanjiao-top-normal@3x.png';
+const imgSanjiaoBottomSelected = '../../../images/' + app.globalData.skin + '/sanjiao_bottom@2x.png';
+const imgSanjiaoBottomNormal = '../../../images/' + app.globalData.skin + '/sanjiao_bottom@2x.png';
+const imgSanjiaoTopSelected = '../../../images/' + app.globalData.skin + '/sanjiao_top@2x.png';
+const imgSanjiaoTopNormal = '../../../images/' + app.globalData.skin + '/sanjiao_top@2x.png';
 
 
 
@@ -67,10 +67,10 @@ Component({
       this.setData({
         skin: app.globalData.skin,
         imgSanjiao: {
-          imgSanjiaoBottomSelected: '../../../images/' + app.globalData.skin + '/sanjiao-bottom-selected@3x.png',
-          imgSanjiaoBottomNormal: '../../../images/' + app.globalData.skin + '/sanjiao-bottom-normal@3x.png',
-          imgSanjiaoTopSelected: '../../../images/' + app.globalData.skin + '/sanjiao-top-selected@3x.png',
-          imgSanjiaoTopNormal: '../../../images/' + app.globalData.skin + '/sanjiao-top-normal@3x.png'
+          imgSanjiaoBottomSelected: '../../../images/' + app.globalData.skin + '/sanjiao_bottom@2x.png',
+          imgSanjiaoBottomNormal: '../../../images/' + app.globalData.skin + '/sanjiao_bottom@2x.png',
+          imgSanjiaoTopSelected: '../../../images/' + app.globalData.skin + '/sanjiao_top@2x.png',
+          imgSanjiaoTopNormal: '../../../images/' + app.globalData.skin + '/sanjiao_top@2x.png'
         },
       })
     }

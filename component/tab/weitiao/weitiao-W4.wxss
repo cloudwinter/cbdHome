@@ -4,14 +4,13 @@
 
 /********common************** */
 .dark .button-bg {
-  background: #1E1F24;
+  background: #2345A4;
 }
 
 .dark .button-bg-selected {
-  background-color: #1E1F24;
-  border:3rpx solid #5A9927;
+  background: #2345A4;
+  border:4rpx solid #274DFF;
 }
-
 
 .orange .button-bg {
   background: #6E269A;
