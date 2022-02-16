@@ -145,7 +145,12 @@ Page({
     this.setData({
       skin: skin
     })
-
+    var name = this.data.connected.name;
+    
+    if(name.indexOf('QMS2-122') >= 0) {
+      console.info('name:'+name);
+        this.hideAnmoTab();
+    }
     //WxNotificationCenter.postNotificationName('INIT',this.data.connected);
   },
 
@@ -218,6 +223,17 @@ Page({
     })
   },
 
+   /**
+   * 设置默认显示的tab
+   */
+  hideAnmoTab() {
+    let tabbar = this.data.tabBar;
+    tabbar[2].show = false;
+    this.setData({
+      tabBar: tabbar,
+    })
+  },
+
   /**
    * 设置压力带显示的tab
    */
@@ -229,13 +245,7 @@ Page({
     })
   },
 
-  /**
-   * 设置默认显示的tab
-   */
-  showDefaultTab() {
-    let tabbar = this.data.tabBar;
-    tabbar[4].show = false;
-  },
+
 
   /******------>tab切换 end */
 
