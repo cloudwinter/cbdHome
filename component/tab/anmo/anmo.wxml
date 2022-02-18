@@ -73,8 +73,9 @@
 					<image class="anmo-button-icon" src="../../../images/{{skin}}/minus-normal@3x.png"></image>
 				</view>
 				<view class="anmo-button-top-middle">
-					<image class="anmo-type-icon" src="../../../images/{{skin}}/toubuanmo@3x.png"></image>
-					<view class="anmo-type-name">头部按摩</view>
+					<image wx:if="{{!onlyTuibu}}" class="anmo-type-icon" src="../../../images/{{skin}}/toubuanmo@3x.png"></image>
+					<image wx:else class="anmo-type-icon" src="../../../images/{{skin}}/zubuanmo@3x.png"></image>
+					<view class="anmo-type-name">{{onlyTuibu?'左侧按摩':'头部按摩'}}</view>
 				</view>
 				<view class="anmo-button-top-right" bindtap="tapPlus" data-type="toubu">
 					<image class="anmo-button-icon" src="../../../images/{{skin}}/plus-normal@3x.png"></image>
@@ -94,7 +95,7 @@
 				</view>
 				<view class="anmo-button-top-middle">
 					<image class="anmo-type-icon" src="../../../images/{{skin}}/zubuanmo@3x.png"></image>
-					<view class="anmo-type-name">腿部按摩</view>
+					<view class="anmo-type-name">{{onlyTuibu?'右侧按摩':'头部按摩'}}</view>
 				</view>
 				<view class="anmo-button-top-right" bindtap="tapPlus" data-type="tuibu">
 					<image class="anmo-button-icon" src="../../../images/{{skin}}/plus-normal@3x.png"></image>

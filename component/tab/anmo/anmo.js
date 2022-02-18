@@ -22,12 +22,13 @@ Component({
    */
   data: {
     skin: app.globalData.skin,
-    display:app.globalData.display,
+    display: app.globalData.display,
     connected: {},
     currentTimeSelected: '',
     anmopinglv: 0, // 0,1,2,3,4
     toubu: 0, //0,1,2,3
     tuibu: 0, //0,1,2,3
+    onlyTuibu: false
   },
 
   /**
@@ -55,7 +56,7 @@ Component({
       // 在组件实例进入页面节点树时执行
       console.info("attached");
       this.setData({
-        display:app.globalData.display
+        display: app.globalData.display
       })
     },
     detached: function () {
@@ -80,8 +81,13 @@ Component({
     initConnected(connected) {
       var that = this.observer;
       console.info('anmo->initConnected:', connected, this.observer);
+      let onlyTuibu = false;
+      if (connected.name.indexOf('QMS2-U92') >= 0) {
+        onlyTuibu = true;
+      }
       that.setData({
         connected: connected,
+        onlyTuibu: onlyTuibu
       })
       //WxNotificationCenter.removeNotification("INIT", that);
     },
@@ -105,41 +111,65 @@ Component({
       var status = cmd.substr(16, 6).toUpperCase();
 
       if (prefix == toubuReplyPrefix) {
-        console.info('anmo->头部 blueReply', cmd,prefix,status);
+        console.info('anmo->头部 blueReply', cmd, prefix, status);
         // 头部
         if (status == '00D690') {
-          that.setData({toubu:0})
+          that.setData({
+            toubu: 0
+          })
         } else if (status == '1E5698') {
-          that.setData({toubu:1})
+          that.setData({
+            toubu: 1
+          })
         } else if (status == '1F9758') {
-          that.setData({toubu:2})
+          that.setData({
+            toubu: 2
+          })
         } else if (status == '20D748') {
-          that.setData({toubu:3})
+          that.setData({
+            toubu: 3
+          })
         }
       } else if (prefix == tuibuReplyPrefix) {
-        console.info('anmo->腿部 blueReply', cmd,prefix,status);
+        console.info('anmo->腿部 blueReply', cmd, prefix, status);
         // 腿部
         if (status == '00D660') {
-          that.setData({tuibu:0})
+          that.setData({
+            tuibu: 0
+          })
         } else if (status == '211678') {
-          that.setData({tuibu:1})
+          that.setData({
+            tuibu: 1
+          })
         } else if (status == '225679') {
-          that.setData({tuibu:2})
+          that.setData({
+            tuibu: 2
+          })
         } else if (status == '2397B9') {
-          that.setData({tuibu:3})
+          that.setData({
+            tuibu: 3
+          })
         }
 
       } else if (prefix == anmopinglvReplyPrefix) {
-        console.info('anmo->按摩频率 blueReply', cmd,prefix,status);
+        console.info('anmo->按摩频率 blueReply', cmd, prefix, status);
         // 按摩频率
         if (status == '24D7EB') {
-          that.setData({anmopinglv:1})
+          that.setData({
+            anmopinglv: 1
+          })
         } else if (status == '25162B') {
-          that.setData({anmopinglv:2})
+          that.setData({
+            anmopinglv: 2
+          })
         } else if (status == '26562A') {
-          that.setData({anmopinglv:3})
+          that.setData({
+            anmopinglv: 3
+          })
         } else if (status == '2797EA') {
-          that.setData({anmopinglv:4})
+          that.setData({
+            anmopinglv: 4
+          })
         }
 
       }
@@ -162,9 +192,9 @@ Component({
         // 恢复指令
         cmd = '001CD6C9';
         that.setData({
-          anmopinglv:0,
-          toubu:0,
-          tuibu:0,
+          anmopinglv: 0,
+          toubu: 0,
+          tuibu: 0,
         })
       } else {
         if (time == '10min') {
@@ -201,11 +231,11 @@ Component({
     tapMinus(e) {
       var type = e.currentTarget.dataset.type;
       var cmd = ''
-      if(type == 'anmopinglv') {
+      if (type == 'anmopinglv') {
         cmd = '001516CF';
-      } else if(type == 'toubu') {
+      } else if (type == 'toubu') {
         cmd = '0011170C';
-      } else if(type = 'tuibu') {
+      } else if (type = 'tuibu') {
         cmd = '001396CD';
       }
       this.sendBlueCmd(cmd);
@@ -218,11 +248,11 @@ Component({
     tapPlus(e) {
       var type = e.currentTarget.dataset.type;
       var cmd = ''
-      if(type == 'anmopinglv') {
+      if (type == 'anmopinglv') {
         cmd = '0014D70F';
-      } else if(type == 'toubu') {
+      } else if (type == 'toubu') {
         cmd = '0010D6CC';
-      } else if(type = 'tuibu') {
+      } else if (type = 'tuibu') {
         cmd = '0012570D';
       }
       this.sendBlueCmd(cmd);
