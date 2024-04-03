@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #1E1F24;
-  background-image: url("https://636c-cloudprd-9gl8dq5f5191037e-1309601866.tcb.qcloud.la/cbd/cbd_common_bg%403x.png?sign=60d3e2c0e64c7aed7667a8ac215b2077&t=1644669430");
+  background-image: url("https://yhjx.oss-cn-beijing.aliyuncs.com/ddc/cbd/icon_cdb_background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
